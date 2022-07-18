@@ -1,5 +1,7 @@
-const inquirer = rquire("inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
+
+const licenseList = [];
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -52,7 +54,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  const Literal = `
+  const Export = `
     # ${data.title}
 
     ## Description
@@ -70,16 +72,28 @@ function writeToFile(fileName, data) {
     ## Test
     ${data.test}
 
-    ##${data.license}
+    ## License
+    ${data.license}
 
     ## User Info
     *${data.name}
     *${data.email}
     `;
+  fs.writeFile(fileName, Export, function (err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("generating README");
+    }
+  });
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function (data) {
+    writeToFile("./READMEGen.md", data);
+  });
+}
 
 // Function call to initialize app
 init();
