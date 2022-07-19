@@ -11,7 +11,7 @@ This project is a way to generate a README suited for your needs quickly and eff
 
 ## Video
 
-[Video Guide](Untitled_%20Jul%2019,%202022%201_10%20AM.webm)
+[Video Guide](2022-07-19_01-28-28.mp4)
 
 ## Creator Info
 
