@@ -2,6 +2,15 @@
 
 [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
+## Table of Contents
+
+- [Description](#description)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Test](#test)
+- [License](#license)
+- [User Info](#user-info)
+
 ## Description
 
 gen readme
