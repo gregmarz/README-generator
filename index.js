@@ -106,6 +106,15 @@ function writeToFile(fileName, data) {
 # ${data.title}
 ${licenseBadge[data.license]}
 
+## Table of Contents
+
+- [Description](#description)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Test](#test)
+- [License](#license)
+- [User Info](#user-info)
+
 ## Description
 ${data.desc}
 
@@ -126,8 +135,8 @@ ${data.license}
 ${licenseDesc[data.license]}
 
 ## User Info
-*${data.name}
-*${data.email}
+- [github.com/${data.name}](https://github.com/${data.name})
+- Email:${data.email}
 `;
   fs.writeFile(fileName, Export, function (err) {
     if (err) {
